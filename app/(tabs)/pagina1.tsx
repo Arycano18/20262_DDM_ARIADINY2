@@ -19,9 +19,11 @@ export default function HomeScreen() {
       </ThemedView>
 
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Quem sou eu?</ThemedText>
+        <ThemedText type="subtitle">Noticia triste.</ThemedText>
         <ThemedText>
-         É inacreditavel me machuquei dançando uma coreografia no fitdance, ao som de Sequência Striptease de Pedro Sampaio no dia 28/09 eu nem imaginava que uma batida no chão me resultaria em uma lesão chata! Após 
+         É inacreditavel me machuquei dançando uma coreografia no fitdance, ao som de Sequência Striptease de Pedro Sampaio no dia 28/09 eu nem imaginava que uma batida no chão me resultaria em uma lesão chata! Estou a 3 semanas com intensas dores no joelho direito e sem consegui treinaar oque eu mais amo, glúteos.
+         Então amigas tomem cuidado nos movimentos para não resultar em lesões que te atrapalhem até em coisas simples no dia a dia, coomo subir uma escada. Lembre-se que somos jovens e nosso corpo tem uma capacidade incrível de se recuperar, mas não podemos negligenciar nossa saúde, treinem com cuidado, bebam água, se alimentem bem e não caia na loucura de aplicar medicamentos para emagrecer.{'\n'}
+         Beijinhos, até a próxima nóticia, com carinho aryzocas. 
         </ThemedText>
       </ThemedView>
   
