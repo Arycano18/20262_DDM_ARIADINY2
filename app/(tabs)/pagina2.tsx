@@ -1,16 +1,16 @@
 import { Image } from 'expo-image';
 import { ScrollView, StyleSheet, View } from 'react-native';
 
-import { HelloWave } from '@/components/hello-wave';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 
 export default function HomeScreen() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <View style={styles.headerContainer}>
+      <View style={{ alignItems: 'center', width: '100%' }}>
+
         <Image
-          source={require('@/assets/images/foto1.png')}
+          source={require('@/assets/images/dordecabeca.png')}
           style={styles.logoImage}
           contentFit="cover"
         />
@@ -18,7 +18,7 @@ export default function HomeScreen() {
 
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">DESAFIOS DE UM VESTIBULANDO (ou quase isso)</ThemedText>
-        <HelloWave />
+    
       </ThemedView>
 
       <ThemedView style={styles.stepContainer}>
@@ -55,9 +55,8 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   logoImage: {
-    height: 160,
-    width: 160,
-    borderRadius: 80, // Mantém a foto circular e destacada
+    height: 630,
+    width: 1600,
   },
   titleContainer: {
     flexDirection: 'row',

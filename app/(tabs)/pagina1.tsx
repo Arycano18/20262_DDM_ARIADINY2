@@ -6,7 +6,7 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 export default function HomeScreen() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <View style={styles.headerContainer}>
+      <View style={{ alignItems: 'center', width: '100%' }}>
         <Image
           source={require('@/assets/images/fitdance1.jpeg')}
           style={styles.logoImage}
@@ -50,9 +50,8 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   logoImage: {
-    height: 160,
-    width: 160,
-    borderRadius: 80, // Mantém a foto circular e destacada
+    height: 200,
+    width: 500,
   },
   titleContainer: {
     flexDirection: 'row',
