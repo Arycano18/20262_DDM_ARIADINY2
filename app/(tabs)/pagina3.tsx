@@ -1,52 +1,34 @@
 import { Image } from 'expo-image';
-import { Link } from 'expo-router';
 import { ScrollView, StyleSheet, View } from 'react-native';
 
-import { HelloWave } from '@/components/hello-wave';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 
-export default function HomeScreen() {
+export default function PageThreeScreen() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <View style={styles.headerContainer}>
+      <View style={styles.imageContainer}>
         <Image
-          source={require('@/assets/images/foto1.png')}
+          source={require('@/assets/images/fitdance1.jpeg')}
           style={styles.logoImage}
           contentFit="cover"
         />
       </View>
 
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Sejam Bem Vindos ao meu Blog, Aryzocers</ThemedText>
-        <HelloWave />
+        <ThemedText type="title">COMIDA, TREINO E PAZ DE ESPÍRITO 🥗</ThemedText>
       </ThemedView>
 
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Quem sou eu?</ThemedText>
+        <ThemedText type="subtitle">Chega de neura!</ThemedText>
         <ThemedText>
-          Me chamo Ariadiny, tenho 16 anos e moro em Itanhém. Desde que respondo por mim me considero uma pessoa curiosa alegre e divertida. Amo meus hobbies e estar ao lado de quem amo.
-          Curso informática para Internet na ETEC de Itanháem, inclusive está pagina é um trabalho escolar. 
-        </ThemedText>
-      </ThemedView>
-  
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Minhas motivações pessoais</ThemedText>
-        <ThemedText>
-          Acompanhe um pouco da minha vida:
-        </ThemedText>
-        
-        <Link href="/modal" style={styles.linkButton}>
-          <ThemedText type="defaultSemiBold" style={styles.linkText}>
-          Clique aqui para ver fotos e relatos.
-          </ThemedText>
-        </Link>
-      </ThemedView>
+          Quem vive na correria entre escola técnica, vestibulares e treinos sabe que a pressão estética na internet é uma armadilha silenciosa. Todo santo dia aparece alguém dizendo o que você deve comer, quantas horas precisa malhar ou qual é o "corpo ideal". Mas a real? A nossa saúde mental vale muito mais do que qualquer padrão impossível.{'\n\n'}
 
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Veja mais</ThemedText>
-        <ThemedText>
-          Se você gosta de conteúdos sobre musculação, jiu jitsu, esportes, vestibular, mpb e livros me acompanhe para mais! Beijinhos!
+          Antigamente, qualquer escorregada na dieta gerava uma culpa desnecessária. Hoje em dia, entendi que comer um doce ou faltar um dia no treino porque o cansaço venceu não estraga o progresso de ninguém. Cuidar de si mesma tem que ser um ato de carinho, e não uma punição. Se o corpo pediu descanso, dar esse descanso é um ato de maturidade, não de preguiça.{'\n\n'}
+
+          O segredo está no equilíbrio (mesmo que às vezes pareça impossível de achar). Comer bem para ter energia nas aulas, treinar porque é divertido e faz bem para a cabeça, e principalmente: aprender a rir dos perrengues do dia a dia. A gente não precisa ser perfeita em tudo, o tempo todo.{'\n\n'}
+
+          Então fica o lembrete de hoje: pegue leve com você mesma. Você já faz coisa pra caramba! Beijinhos, e até a próxima reflexão. 🤍
         </ThemedText>
       </ThemedView>
     </ScrollView>
@@ -58,36 +40,23 @@ const styles = StyleSheet.create({
     padding: 16,
     paddingBottom: 40,
   },
-  headerContainer: {
-    height: 200,
-    justifyContent: 'center',
-    alignItems: 'flex-start', // Alinha a imagem no canto esquerdo
-    backgroundColor: '#A1CEDC',
+  imageContainer: {
+    width: '100%',
     borderRadius: 16,
-    paddingLeft: 16, // Espaçamento na esquerda
-    marginBottom: 16,
     overflow: 'hidden',
+    marginBottom: 20,
   },
   logoImage: {
-    height: 160,
-    width: 160,
-    borderRadius: 80, // Mantém a foto circular e destacada
+    width: '100%',
+    height: 220,
   },
   titleContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
-    marginBottom: 20,
+    marginBottom: 15,
   },
   stepContainer: {
     gap: 8,
     marginBottom: 20,
-  },
-  linkButton: {
-    marginTop: 8,
-    paddingVertical: 8,
-  },
-  linkText: {
-    color: '#0a7ea4',
   },
 });

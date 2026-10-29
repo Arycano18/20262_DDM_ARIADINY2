@@ -6,7 +6,7 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 export default function HomeScreen() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <View style={{ alignItems: 'center', width: '100%' }}>
+      <View style={styles.imageContainer}>
         <Image
           source={require('@/assets/images/fitdance1.jpeg')}
           style={styles.logoImage}
@@ -15,21 +15,17 @@ export default function HomeScreen() {
       </View>
 
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">MACHUQUEI MEUS JOELHOS NO FITDANCE 😭 </ThemedText>
+        <ThemedText type="title">MACHUQUEI MEUS JOELHOS NO FITDANCE 😭</ThemedText>
       </ThemedView>
 
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Noticia triste.</ThemedText>
+        <ThemedText type="subtitle">Notícia triste.</ThemedText>
         <ThemedText>
-         É inacreditavel me machuquei dançando uma coreografia no fitdance, ao som de Sequência Striptease de Pedro Sampaio no dia 28/09 eu nem imaginava que uma batida no chão me resultaria em uma lesão chata! Estou a 3 semanas com intensas dores no joelho direito e sem consegui treinaar oque eu mais amo, glúteos.
-         Então amigas tomem cuidado nos movimentos para não resultar em lesões que te atrapalhem até em coisas simples no dia a dia, coomo subir uma escada. Lembre-se que somos jovens e nosso corpo tem uma capacidade incrível de se recuperar, mas não podemos negligenciar nossa saúde, treinem com cuidado, bebam água, se alimentem bem e não caia na loucura de aplicar medicamentos para emagrecer.{'\n'}
-         Beijinhos, até a próxima nóticia, com carinho aryzocas. 
+          É inacreditável! Me machuquei dançando uma coreografia no FitDance ao som de Sequência Striptease de Pedro Sampaio no dia 28/09. Eu nem imaginava que uma batida no chão me resultaria em uma lesão chata! Estou há 3 semanas com intensas dores no joelho direito e sem conseguir treinar o que eu mais amo: glúteos.{'\n\n'}
+          Então, amigas, tomem cuidado nos movimentos para não resultar em lesões que te atrapalhem até em coisas simples do dia a dia, como subir uma escada. Lembrem-se de que somos jovens e nosso corpo tem uma capacidade incrível de se recuperar, mas não podemos negligenciar nossa saúde. Treinem com cuidado, bebam água, se alimentem bem e não caiam na loucura de aplicar medicamentos para emagrecer.{'\n\n'}
+          Beijinhos, até a próxima notícia, com carinho aryzocas. 
         </ThemedText>
       </ThemedView>
-  
-     
-
-     
     </ScrollView>
   );
 }
@@ -39,25 +35,20 @@ const styles = StyleSheet.create({
     padding: 16,
     paddingBottom: 40,
   },
-  headerContainer: {
-    height: 200,
-    justifyContent: 'center',
-    alignItems: 'flex-start', // Alinha a imagem no canto esquerdo
-    backgroundColor: '#A1CEDC',
+  imageContainer: {
+    width: '100%',
     borderRadius: 16,
-    paddingLeft: 16, // Espaçamento na esquerda
-    marginBottom: 16,
     overflow: 'hidden',
+    marginBottom: 20,
   },
   logoImage: {
+    width: '100%',
     height: 200,
-    width: 500,
   },
   titleContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
-    marginBottom: 20,
+    marginBottom: 15,
   },
   stepContainer: {
     gap: 8,
